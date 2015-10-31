@@ -1,6 +1,13 @@
 hello i am a test txt
 haha
 hehe
+<<<<<<< HEAD
 modify in testing branch
 modify in master after testing
+<<<<<<< HEAD
 modify in iss53
+=======
+=======
+add a line at testing after iss53
+>>>>>>> testing
+>>>>>>> master
