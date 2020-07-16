@@ -15,7 +15,8 @@ k值由用户确定，不同的k值会获得不同的结果
 处理大数据集时，算法可以保证较好的伸缩性（在处理各种规模的数据时都有很好的性能。随着数据的增大，效率不会下降很快）和高效率
 当簇近似高斯分布时，分类效果很好
 
-`# -*- coding: gbk -*-
+```python
+# -*- coding: gbk -*-
 
 import numpy as np
 from sklearn.datasets import make_moons
@@ -146,4 +147,4 @@ if __name__ == '__main__':
     plt.scatter(X2[:, 0], X2[:, 1], marker='o', c=km_Y2)
     plt.scatter(mus[:, 0], mus[:, 1], marker='^', c='r')
     plt.show()
-`
+```

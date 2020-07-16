@@ -2,7 +2,9 @@
 
 学习向量量化(Learning Vector Quantization,LVQ)和k-means类似，也属于原型聚类的一种算法，不同的是，LVQ处理的是有标签的样本集，学习过程利用样本的标签进行辅助聚类
 
-`# -*- coding: gbk -*-
+```python
+
+# -*- coding: gbk -*-
 
 import numpy as np
 import copy
@@ -122,4 +124,4 @@ if __name__ == '__main__':
     plt.scatter(mus[:, 0], mus[:, 1], marker='^', c='r')
     plt.show()
 
-`
+```

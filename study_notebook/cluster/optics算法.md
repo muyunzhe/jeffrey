@@ -9,9 +9,8 @@ OPTICS通过计算出一个可达距离列表来进行聚类，首先计算出�
 
 
 
-``
 
-```
+```python
 # -*- coding: gbk -*-
 
 import numpy as np
