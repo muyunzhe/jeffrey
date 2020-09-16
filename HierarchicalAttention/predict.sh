@@ -1,0 +1,13 @@
+    $PYTHON_BIN ${MODEL_PATH}/pro_HierarchicalAttention_predict_multiprocess.py \
+        --num_classes=2 \
+        --batch_size=32 \
+        --ckpt_dir=${MODEL_PATH}/model_v1_2 \
+        --max_sentence_num=150 \
+        --max_sentence_length=50 \
+        --embed_size=300 \
+        --num_epoch=20 \
+        --use_embedding=True \
+        --predict_source_file=${PREDICT_PATH}/raw_content_${EVENT_DAY} \
+        --predict_out_file=${PREDICT_PATH}/raw_content_${EVENT_DAY}_res_info \
+        --word2vec_model_path=${MODEL_PATH}/sgns.wiki.bigram-char \
+        --hidden_size=300

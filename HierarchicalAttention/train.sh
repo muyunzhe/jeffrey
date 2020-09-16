@@ -1,0 +1,12 @@
+$PYTHON_BIN pro_HierarchicalAttention_train.py \
+    --num_classes=2 \
+    --batch_size=32 \
+    --ckpt_dir=${MODEL_PATH}/model_v2_2 \
+    --max_sentence_num=150 \
+    --max_sentence_length=50 \
+    --embed_size=300 \
+    --num_epoch=20 \
+    --use_embedding=True \
+    --train_data_path=${MODEL_PATH}/train/train_v2.dat \
+    --word2vec_model_path=${MODEL_PATH}/sgns.wiki.bigram-char \
+    --hidden_size=300
